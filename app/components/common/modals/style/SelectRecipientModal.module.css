@@ -1,0 +1,537 @@
+.noResults {
+  text-align: center;
+  padding: 40px 0;
+  color: #666;
+  font-size: 16px;
+}
+
+.SelectRecipientModalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.SelectRecipientModal {
+  background-color: white;
+  border-radius: 5px;
+  position: absolute;
+  width: 560px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.closeButton {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #666;
+}
+
+.closeButton:hover {
+  color: #333;
+}
+
+.modalContent {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.modalTitle {
+  text-align: left;
+  font-size: 2em;
+  font-weight: 600;
+  padding: 20px;
+  color: #333;
+  border-bottom: 1px solid #838383;
+}
+
+.form p {
+  font-size: 1.25em;
+  color: #141414;
+  font-weight: 500;
+  line-height: 46px;
+}
+
+.form input {
+  line-height: 24px;
+  border: 1px solid #d9d9d9;
+  font-size: 1em;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.form input::placeholder {
+  color: #d9d9d9;
+}
+
+.form .inputBasic {
+  padding: 60px 40px 20px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.form .inputBasic > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  width: 100%;
+}
+
+.form .inputBasic > div .inputWrap {
+  display: flex;
+  gap: 10px;
+}
+
+.form .inputBasic > div .inputWrap input {
+  width: 155px;
+}
+.form .inputBasic .inputContainer {
+  position: relative;
+  display: flex;
+  gap: 10px;
+}
+
+.inputBasic > div .inputWrap .inputContainer input {
+  width: 100px;
+}
+
+.inputBasic
+  > div
+  .inputWrap
+  .inputContainer:first-child
+  input {
+  width: 150px;
+}
+
+.inputContainer input:nth-child(2) {
+  background-color: #d9d9d9;
+}
+
+.title {
+  width: 80px;
+  text-align: left;
+  position: relative;
+}
+
+.form .inputBasic div:first-child .title::before {
+  content: 'Early Birds';
+  position: absolute;
+  top: -40px;
+  font-size: 1em;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  line-height: 20px;
+}
+
+.form .inputBasic div:first-child .inputWrap div::before {
+  position: absolute;
+  top: -40px;
+  font-size: 1em;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  line-height: 20px;
+}
+.form
+  .inputBasic
+  div:first-child
+  .inputWrap
+  div:nth-of-type(1)::before {
+  content: '연속사용 (1년이상)';
+}
+
+.form
+  .inputBasic
+  div:first-child
+  .inputWrap
+  div:nth-of-type(2)::before {
+  content: 'Basic';
+}
+
+.form
+  .inputBasic
+  div:first-child
+  .inputWrap
+  div:nth-of-type(3)::before {
+  content: 'Premium';
+}
+
+.form
+  .inputBasic
+  div:first-child
+  .inputWrap
+  div:nth-of-type(4)::before {
+  content: 'Business';
+}
+
+.form > p {
+  width: 50%;
+  text-align: left;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+.modalBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-top: 1px solid #838383;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  gap: 120px;
+  width: 100%;
+}
+
+.buttonContainer.twoButtons {
+  grid-template-columns: 1fr 1fr;
+}
+
+.buttonContainer.oneButton {
+  grid-template-columns: 1fr;
+}
+
+.modalButton {
+  padding: 0 30px;
+  line-height: 45px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.modalBottom button {
+  width: 100%;
+  line-height: 45px;
+  background-color: #48bed9;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.modalBottom .secondary {
+  background-color: #d9d9d9;
+  color: #fff;
+}
+
+.modalBottom .primary {
+  background-color: #0d688c;
+  color: #fff;
+}
+
+.modalBody {
+  padding: 20px;
+}
+
+.dateWrap {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.dateWrap span {
+  color: #d9d9d9;
+}
+
+.dateWrap button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0d688c;
+  color: #fff;
+  font-size: 1em;
+}
+
+.calenderWrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.calenderWrap {
+  position: relative;
+}
+
+.datepickerInput {
+  padding: 8px 16px;
+  padding-right: 35px;
+  border: 1px solid rgba(84, 144, 181, 0.67);
+  border-radius: 4px;
+  font-size: 1em;
+  width: 200px;
+  position: relative;
+}
+
+.calenderWrap::after {
+  position: absolute;
+  content: '';
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+  background: url('/img/admin/faq/calender.svg') no-repeat;
+  width: 24px;
+  height: 24px;
+}
+
+.form .tableInner {
+  padding: 0 20px;
+  margin-top: 20px;
+}
+
+.form table {
+  border-collapse: collapse;
+  text-align: center;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.form table th input[type='checkbox'] {
+  width: 22px;
+  height: 22px;
+  border-radius: 5px;
+}
+
+.form table thead {
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.form table th {
+  padding: 10px 0;
+  font-size: 1em;
+  font-weight: 400;
+  color: #4b5563;
+}
+
+.form table td input[type='checkbox'] {
+  width: 22px;
+  height: 22px;
+  border-radius: 5px;
+}
+
+.form table td {
+  padding: 10px 0;
+  font-size: 1em;
+  font-weight: 400;
+  color: #4b5563;
+}
+
+.form table tbody {
+  display: block;
+  height: 300px;
+  overflow-y: auto;
+}
+
+.form table tbody tr {
+  border-bottom: 1px solid #d9d9d9;
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.form table tbody tr span {
+  color: #0d688c;
+  font-size: 1em;
+}
+
+.form table tbody tr button {
+  background-color: #eef227;
+  color: #ff8787;
+  border-radius: 5px;
+  padding: 0px 24px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.bottomTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.searchZone {
+  border: 1px solid rgba(84, 144, 181, 0.67);
+  border-radius: 5px;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  width: 270px;
+}
+
+.searchZone input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding: 5px 10px;
+}
+
+.searchZone button {
+  background-color: #fff;
+  padding: 2px;
+  cursor: pointer;
+}
+
+.pageZone {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+}
+
+.pageZone p {
+  color: #4b5563;
+  font-size: 0.625em;
+  position: absolute;
+  top: -20px;
+  left: 5px;
+}
+
+.pageZone div {
+  border-radius: 5px;
+  border: 1px solid rgba(84, 144, 181, 0.67);
+  width: 150px;
+}
+
+.pageZone div input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding: 5px 10px;
+  text-align: center;
+}
+
+.pageZone select {
+  width: 100%;
+  border: none;
+  padding: 8px 10px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  font-size: .9em;
+  color: #4b5563;
+  text-align: center;
+  background-color: #0000;
+}
+
+.pageZone button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0d688c;
+  color: #fff;
+  font-size: 1em;
+}
+
+.pagination {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  padding: 20px 0;
+  position: relative;
+}
+
+.pagePrev {
+  background: url('/img/admin/faq/pagePrev.svg') no-repeat;
+  width: 6px;
+  height: 15px;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.pageNext {
+  background: url('/img/admin/faq/pageNext.svg') no-repeat;
+  width: 6px;
+  height: 15px;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.pageNumWrap {
+  display: flex;
+  gap: 20px;
+}
+
+.pageNumWrap a {
+  font-size: 0.875em;
+  color: #aaa;
+  font-weight: 300;
+}
+
+.pageNumWrap a.on {
+  font-weight: 400;
+  color: #000;
+}
+
+.pagination > p {
+  font-size: 0.875em;
+  color: #aaa;
+  font-weight: 300;
+  position: absolute;
+  color: #4b5563;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.resendButton {
+  position: absolute;
+  background-color: #0d688c;
+  color: #fff;
+  font-size: 1em;
+  line-height: 43px;
+  top: 20px;
+  right: 50px;
+  border-radius: 5px;
+  padding: 0 20px;
+}
+
+.loadingOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.loadingSpinner {
+  padding: 20px;
+  border-radius: 8px;
+  background: rgba(13, 104, 140, 0.9);
+  color: white;
+  font-size: 16px;
+}

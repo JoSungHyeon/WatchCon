@@ -1,0 +1,113 @@
+.sectionInner {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sectionTop {
+  display: flex;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.sectionTop button {
+  color: #d3d3d3;
+  font-size: 1.5em;
+  border: none;
+  padding: 15px 60px;
+  border-radius: 10px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.sectionTop button.on {
+  color: #fff;
+  background-color: #48bed9;
+}
+
+.sectionBottom {
+  border-radius: 10px;
+  background-color: #fff;
+  width: 100%;
+  padding: 40px 30px 10px 30px;
+  height: 850px;
+}
+
+.pagination {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  padding: 20px 0;
+  position: relative;
+  align-items: center;
+}
+
+.pagePrev {
+  background: url('/img/admin/watchcon/pagePrev.svg')
+    no-repeat;
+  width: 6px;
+  height: 15px;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.pageNext {
+  background: url('/img/admin/watchcon/pageNext.svg')
+    no-repeat;
+  width: 6px;
+  height: 15px;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.pageNumWrap {
+  display: flex;
+  gap: 20px;
+}
+
+.pageNumWrap a {
+  font-size: 0.875em;
+  color: #aaa;
+  font-weight: 300;
+}
+
+.pageNumWrap a.on {
+  font-weight: 400;
+  color: #000;
+}
+
+.pagination > p {
+  font-size: 0.875em;
+  color: #aaa;
+  font-weight: 300;
+  position: absolute;
+  color: #4b5563;
+  left: 0;
+}
+
+.discountBtnWrap {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.discountBtnWrap button {
+  width: 150px;
+  height: 45px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.discountBtnWrap button.write {
+  background-color: #0d688c;
+  color: #fff;
+}
+
+.discountBtnWrap button.edit {
+  background-color: #ff3939;
+  color: #fff;
+}

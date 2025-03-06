@@ -1,0 +1,394 @@
+#pricing {
+  background-color: #f4f4f4;
+  width: 100%;
+  padding: 150px 0;
+  position: relative;
+  z-index: 0;
+}
+
+#pricing .pricingInner {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+#pricing .pricingInner a {
+  display: inline-block;
+  padding: 0 100px;
+  line-height: 55px;
+  background-color: #012840;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1.5em;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#pricing .pricingInner .pricingTop {
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+
+#pricing .pricingInner .pricingTop .pricingTitle {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#pricing .pricingInner .pricingTop h2 {
+  font-size: 3em;
+  font-weight: 700;
+}
+
+#pricing .pricingInner .pricingTop p {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+#pricing .pricingInner .pricingTop select {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 8px 70px;
+  font-size: 1.5em;
+  display: block;
+  border: 1px solid #d9d9d9;
+}
+
+#pricing .pricingInner .pricingTop .currencyToggle {
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #d9d9d9;
+  display: inline-block;
+  border-radius: 20px;
+}
+
+#pricing .pricingInner .pricingBottom .currencyToggle {
+  background-color: #d9d9d9;
+  display: inline-block;
+  border-radius: 20px;
+}
+
+.pricingBottomInner {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+
+#pricing .pricingInner .pricingTop .currencyToggle button,
+#pricing .pricingInner .pricingBottom .currencyToggle button {
+  color: #fff;
+  padding: 0 1.5em;
+  height: 40px;
+  font-size: 1.5em;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  border-radius: 20px;
+  background-color: #d9d9d9;
+}
+
+#pricing .pricingInner .pricingTop .currencyToggle button.on,
+#pricing .pricingInner .pricingBottom .currencyToggle button.on {
+  background-color: #012840;
+  z-index: 2;
+  border-radius: 20px;
+}
+
+#pricing .pricingInner .pricingBottom {
+  padding-top: 60px;
+}
+
+#pricing .pricingInner .pricingBottom .priceToggle {
+  background-color: #d9d9d9;
+  border-radius: 20px;
+}
+
+#pricing .pricingInner .pricingBottom .priceToggle button {
+  color: #fff;
+  padding: 0 1.5em;
+  height: 40px;
+  font-size: 1.5em;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  border-radius: 20px;
+  background-color: #d9d9d9;
+}
+
+#pricing
+  .pricingInner
+  .pricingBottom
+  .chgBtnWrap
+  button.on {
+  background-color: #012840;
+  z-index: 2;
+  border-radius: 20px;
+}
+
+#pricing .pricingInner .pricingBottom .priceToggle button.on {
+  background-color: #012840;
+  z-index: 2;
+  border-radius: 20px;
+}
+
+.priceWrapper {
+  display: flex;
+  padding: 60px 0;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-width: 1500px;
+  max-width: 1500px;
+}
+
+.priceWrapper .priceItem {
+  width: calc((100% - 100px) / 4);
+  background-color: #fff;
+  border: 1px solid #4b5563;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 490px;
+}
+
+.priceWrapper .priceItem .priceItemTop {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  position: relative;
+}
+
+.priceWrapper .priceItem .priceItemTop i {
+  font-style: normal;
+  color: #48bed9;
+  font-size: 1em;
+}
+
+.priceWrapper .priceItem .priceItemTop strong {
+  font-size: 2em;
+  white-space: nowrap;
+  word-break: keep-all;
+}
+
+.priceWrapper .priceItem .priceItemTop div {
+  font-size: 0.8125em;
+  color: #7F7F7F;
+}
+
+.priceWrapper .priceItem .priceItemTop p {
+  font-size: 0.8125em;
+  word-break: keep-all;
+}
+
+
+.priceWrapper .priceItem .priceItemBottom {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.priceWrapper .priceItem .priceItemBottom span {
+  display: block;
+  font-size: 0.8125em;
+  color: #141414;
+  padding-left: 30px;
+  position: relative;
+}
+
+.priceWrapper .priceItem .priceItemBottom span::after {
+  content: '';
+  position: absolute;
+  background: url(/img/price/chk.png) no-repeat;
+  background-size: contain;
+  width: 18px;
+  height: 18px;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  color: #012840;
+  font-size: 12px;
+  line-height: 1;
+}
+
+.priceWrapper .priceItem .priceItemBottom span.unchecked::after {
+  background: url(/img/price/unchk.png) no-repeat;
+  background-size: contain;
+}
+
+.priceWrapper .priceItem .priceItemBottom span.unchecked {
+  color: #000;
+}
+
+.selectBtnWrap {
+  display: flex;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #d9d9d9;
+  border-radius: 20px;
+}
+
+.selectBtnWrap button {
+  color: #fff;
+  height: 20px;
+  padding: 0 10px;
+  font-size: 1em;
+  border-radius: 20px;
+  background-color: #d9d9d9;
+  cursor: pointer;
+}
+
+.selectBtnWrap button.on {
+  background-color: #024873;
+}
+
+@media only screen and (max-width: 1500px) {
+  .priceWrapper {
+    flex-wrap: wrap;
+    gap: 50px;
+    margin: 50px 0;
+    padding: 0 20px;
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  .priceWrapper .priceItem {
+    width: calc((100% - 50px) / 2);
+    padding: 20px;
+    height: 170px;
+  }
+
+  .priceWrapper .priceItem .priceItemBottom {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  #pricing .pricingInner .pricingTop .pricingTitle {
+    gap: 10px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #pricing .pricingInner {
+    padding: 100px 20px 0 20px;
+  }
+
+  #pricing .pricingInner .pricingTop .pricingTitle {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .priceWrapper {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .priceWrapper .priceItem {
+    width: 100%;
+    padding: 10px;
+    height: auto;
+  }
+
+  .priceWrapper {
+    padding: 10px 0 10px 0;
+  }
+
+  #pricing .pricingInner .pricingTop h2 {
+    font-size: 1.5em;
+  }
+
+  #pricing .pricingInner .pricingTop p {
+    font-size: 1em;
+  }
+
+  #pricing .pricingInner .pricingBottom {
+    padding-top: 60px;
+  }
+
+  .priceWrapper .priceItem .priceItemTop {
+    gap: 5px;
+  }
+
+  .priceWrapper .priceItem .priceItemTop strong {
+    font-size: 1em;
+  }
+
+  .priceWrapper .priceItem .priceItemTop div {
+    font-size: 0.8125em;
+  }
+
+
+  .priceWrapper .priceItem .priceItemTop p {
+    font-size: 0.725em;
+  }
+
+  #pricing .pricingInner .pricingBottom .priceToggle button {
+    height: 30px;
+    font-size: 1em;
+  }
+
+  #pricing .pricingInner .pricingTop .currencyToggle button,
+  #pricing .pricingInner .pricingBottom .currencyToggle button {
+    height: 30px;
+    font-size: 1em;
+  }
+
+  #pricing .pricingInner a {
+    padding: 0;
+    width: 100%;
+    font-size: 0.75em;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #pricing {
+    height: auto;
+    padding: 0;
+  }
+
+  #pricing .pricingInner {
+    padding: 100px 20px 100px 20px;
+  }
+
+  #pricing .pricingInner .pricingTop h2 {
+    font-size: 1.25em;
+  }
+
+  #pricing .pricingInner .pricingTop p {
+    font-size: 0.75em;
+  }
+
+  #pricing .pricingInner .pricingBottom .priceToggle button {
+    height: 30px;
+    font-size: 0.75em;
+  }
+
+  #pricing .pricingInner .pricingTop .currencyToggle button,
+  #pricing .pricingInner .pricingBottom .currencyToggle button {
+    height: 30px;
+    font-size: 0.75em;
+  }
+
+  .priceWrapper {
+    margin: 10px 0;
+  }
+
+}

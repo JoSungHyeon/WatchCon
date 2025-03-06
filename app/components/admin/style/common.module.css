@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+}
+
+.section {
+  background-color: #eeeeee;
+  width: calc(100% - 400px);
+  /* height: 100vh; */
+  padding: 10px 50px;
+  position: relative;
+}

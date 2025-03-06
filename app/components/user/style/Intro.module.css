@@ -1,0 +1,162 @@
+#intro {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow-y: hidden;
+  z-index: 0;
+}
+
+#intro::before {
+  content: '';
+  background: url('/img/intro/intro_bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+#intro > .introInner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+}
+
+#intro > .introInner .textWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}
+
+#intro > .introInner .textWrap .textTop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#intro > .introInner .textWrap .textTop h2 {
+  font-size: 6.25em;
+  color: #0148ff;
+  transition: all 0.3s;
+  font-weight: 700;
+}
+
+#intro > .introInner .textWrap .textTop p {
+  padding: 24px 10px 0 10px;
+  font-weight: 500;
+  font-size: 1.75em;
+  color: #373737;
+  line-height: 34px;
+  word-break: keep-all;
+  transition: all 0.3s;
+}
+
+#intro > .introInner .textWrap .textBottom strong {
+  font-size: 2em;
+  color: #141414;
+  line-height: 45px;
+  word-break: keep-all;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+#intro > .introInner .btnWrap {
+  padding-top: 64px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+#intro > .introInner .btnWrap button {
+  width: 354px;
+  border-radius: 5px;
+  background-color: #48bed9;
+  padding: 0;
+  cursor: pointer;
+}
+
+#intro > .introInner .btnWrap button p {
+  color: #fff;
+  font-size: 2em;
+  font-weight: 700;
+  line-height: 73px;
+  transition: all 0.3s;
+}
+
+#intro > .introInner .btnWrap button img {
+  transition: all 0.3s;
+}
+
+#intro > .introInner .btnWrap button:first-child {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  align-items: center;
+}
+
+@media (orientation: landscape) {
+.narrow {
+  height: 200vh !important;
+}
+}
+@media only screen and (max-width: 1100px) {
+  #intro > .introInner .textWrap .textTop h2 {
+    font-size: 4em;
+  }
+
+  #intro > .introInner {
+    padding: 0 40px;
+    width: 100%;
+  }
+
+  #intro > .introInner .textWrap .textTop p {
+    font-size: 1.25em;
+    line-height: 30px;
+  }
+
+  #intro > .introInner .textWrap .textBottom strong {
+    font-size: 1.25em;
+    line-height: 30px;
+  }
+
+  #intro > .introInner .btnWrap button p {
+    font-size: 1.25em;
+    line-height: 40px;
+  }
+
+  #intro > .introInner .btnWrap button img {
+    width: 12%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #intro > .introInner .textWrap .textTop h2 {
+    font-size: 2.5em;
+  }
+
+  #intro > .introInner .textWrap .textTop p {
+    font-size: 1em;
+    line-height: 20px;
+  }
+
+  #intro > .introInner .textWrap .textBottom strong {
+    font-size: 1em;
+    line-height: 20px;
+  }
+
+  #intro > .introInner .btnWrap button p {
+    font-size: 1em;
+    line-height: 30px;
+  }
+
+  #intro > .introInner .btnWrap button:first-child {
+    display: none;
+  }
+}

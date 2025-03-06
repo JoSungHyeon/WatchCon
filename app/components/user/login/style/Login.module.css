@@ -1,0 +1,271 @@
+#login {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #d9d9d9;
+}
+
+#login .loginInner {
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  position: absolute;
+  height: 550px;
+  max-width: 1000px;
+  width: 100%;
+  top: calc(50% + 120px);
+  left: 50%;
+  gap: 90px;
+  transform: translate(-50%, calc(-50% - 60px));
+}
+
+#login .loginInner .loginLeft {
+  width: 40%;
+}
+
+#login .loginInner .loginLeft img {
+  width: 100%;
+}
+
+.loginInner .loginForm {
+  width: 390px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.loginInner .loginForm .inputWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.loginInner .loginForm strong {
+  color: #141414;
+  font-size: 2em;
+  text-align: center;
+  display: block;
+}
+
+.loginInner .loginForm .inputWrap .saveWrap a {
+  display: block;
+  width: 17px;
+  height: 17px;
+  border-radius: 5px;
+  border: 1px solid rgba(84, 144, 181, 0.67);
+}
+
+.loginInner .loginForm .inputWrap .saveWrap span,
+.loginInner .loginForm .inputWrap .saveWrap label {
+  font-size: 0.875em;
+}
+
+.loginInner .loginForm button {
+  background-color: #012840;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 1.25em;
+  line-height: 45px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.loginInner .loginForm button:disabled {
+  background-color: #d9d9d9;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.loginInner .loginForm > a {
+  color: #48bed9;
+  cursor: pointer;
+  font-size: 1.25em;
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+
+.loginInner form input {
+  width: 100%;
+  border: 1px solid rgba(84, 144, 181, 0.67);
+  border-radius: 10px;
+  line-height: 50px;
+  padding: 0 20px;
+}
+
+.loginInner form input::placeholder {
+  color: #d9d9d9;
+}
+
+.loginInner form .inputWrap .inputItem {
+  position: relative;
+}
+
+.loginInner form .inputWrap .inputItem .errorMessage {
+  position: absolute;
+  left: 0;
+  bottom: -30px;
+  font-size: 0.85em;
+  color: red;
+}
+
+.loginInner form .inputWrap .saveWrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.lostWrap {
+  width: 390px;
+  height: 100%;
+}
+
+.lostWrap > .btnWrap {
+  display: flex;
+  background-color: #d9d9d9;
+  border-radius: 10px;
+}
+
+.lostWrap > .btnWrap button {
+  width: 50%;
+  font-size: 1.25em;
+  line-height: 45px;
+  background-color: #d9d9d9;
+  color: #696969;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.lostWrap > .btnWrap button:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.lostWrap > .btnWrap button:first-child.on {
+  background-color: #48bed9;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.lostWrap > .btnWrap button:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.lostWrap > .btnWrap button:last-child.on {
+  background-color: #48bed9;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.lostWrap > .btnWrap button.on {
+  background-color: #48bed9;
+  color: #fff;
+}
+
+.lostWrap form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100% - 100px);
+}
+
+.lostWrap .inputWrap {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.lostWrap .inputWrap .inputItem {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.lostWrap .inputWrap strong {
+  font-size: 1.25em;
+  text-align: center;
+}
+
+.lostWrap form button {
+  background-color: #012840;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 1.25em;
+  line-height: 45px;
+  cursor: pointer;
+}
+
+.lostWrap form button:disabled {
+  background-color: #d9d9d9;
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.saveId input[type='checkbox'] {
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  accent-color: #0d688c;
+}
+
+.saveId label {
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.textInfo {
+  font-size: 1em;
+  color: #141414;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.textInfo p {
+  display: inline;
+  color: #5490b5;
+}
+
+.confirmBtn {
+  background-color: #012840;
+  line-height: 45px;
+  width: 100%;
+  color: #fff !important;
+  border-radius: 10px;
+  font-size: 1em;
+}
+
+@media only screen and (max-width: 1100px) {
+  #login {
+    background-color: #fff;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #login .loginInner {
+    justify-content: center;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #login .loginInner .loginLeft {
+    display: none;
+  }
+
+  .loginInner .loginForm > a {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .loginInner form .inputWrap .saveWrap {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+}

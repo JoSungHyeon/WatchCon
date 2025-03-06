@@ -1,0 +1,121 @@
+.sectionInner {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sectionTop {
+  display: flex;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sectionTop button {
+  color: #d3d3d3;
+  font-size: 1.5em;
+  border: none;
+  padding: 15px 60px;
+  border-radius: 10px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.sectionTop button.on {
+  color: #fff;
+  background-color: #48bed9;
+}
+
+.sectionBottom {
+  border-radius: 10px;
+  background-color: #fff;
+  width: 100%;
+  padding: 60px 50px 30px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.sectionBottom input {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+  font-size: 1.25em;
+}
+
+.sectionBottom select {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+  font-size: 1.25em;
+}
+
+.sectionBottom p {
+  padding-bottom: 20px;
+  color: #4b5563;
+  font-size: 1.25em;
+  padding-left: 10px;
+}
+
+.sectionBottom textarea {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #d9d9d9;
+  resize: none;
+  font-size: 1.25em;
+  padding: 20px;
+  height: 250px;
+}
+
+.sectionBottom .detailBottom {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sectionBottom .detailBottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sectionBottom .detailBottom a {
+  display: block;
+  padding: 0px 50px;
+  background-color: #0d688c;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  line-height: 45px;
+}
+
+.sectionBottom .detailBottom button {
+  display: block;
+  padding: 0px 50px;
+  background-color: #0d688c;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  line-height: 45px;
+}
+
+.bottomLeft {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.bottomLeft input {
+  width: 45px;
+  height: 45px;
+  border-radius: 5px;
+}
+
+.bottomRight {
+  display: flex;
+  gap: 20px;
+}

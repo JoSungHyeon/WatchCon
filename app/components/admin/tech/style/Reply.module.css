@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+}
+
+.section {
+  background-color: #eeeeee;
+  width: calc(100% - 400px);
+  /* height: 100vh; */
+  padding: 10px 50px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sectionTop {
+  display: flex;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sectionTop button {
+  color: #d3d3d3;
+  font-size: 1.5em;
+  border: none;
+  padding: 15px 60px;
+  border-radius: 10px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.sectionTop button.on {
+  color: #fff;
+  background-color: #48bed9;
+}
+
+.sectionBottom {
+  border-radius: 10px;
+  width: 100%;
+}

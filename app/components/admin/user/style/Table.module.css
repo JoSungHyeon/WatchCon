@@ -1,0 +1,432 @@
+.table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.table thead th {
+  font-size: 1em;
+  color: #4b5563;
+  font-weight: 300;
+  line-height: 70px;
+}
+
+.table thead {
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.table thead tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.table tbody {
+  display: block;
+  max-height: 550px;
+  overflow-y: auto;
+}
+
+.table tbody tr {
+  border-bottom: 1px solid #d9d9d9;
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.table tbody td {
+  line-height: 70px;
+  font-size: 1em;
+  color: #141414;
+}
+
+.table thead button {
+  background-color: #0d688c;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.table thead tr .mailWrite,
+.table tbody tr .mailWrite {
+  width: 10%;
+}
+
+.table thead th span {
+  font-size: 0.5em;
+}
+
+.table tbody button {
+  background-color: #0d688c;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.bottomTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.searchZone {
+  border: 1px solid rgba(84, 144, 181, 0.67);
+  border-radius: 5px;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  width: 300px;
+}
+
+.searchZone input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding: 5px 10px;
+}
+
+.searchZone button {
+  background-color: #fff;
+  padding: 2px;
+  cursor: pointer;
+}
+
+.pageZone {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pageZone p {
+  color: #4b5563;
+  font-size: 1em;
+}
+
+.pageZone div {
+  border-radius: 5px;
+  border: 1px solid rgba(84, 144, 181, 0.67);
+  width: 100px;
+}
+
+.pageZone div input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding: 5px 10px;
+  text-align: center;
+}
+
+.pageZone select {
+  width: 100%;
+  border: none;
+  padding: 8px 10px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  font-size: .9em;
+  color: #4b5563;
+  text-align: center;
+  background-color: #0000;
+}
+
+.pageZone button {
+  color: #fff;
+  background-color: #0d688c;
+  padding: 0 20px;
+  line-height: 35px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pagination {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  padding: 20px 0;
+  position: relative;
+}
+
+.pagePrev {
+  background: url('/img/admin/faq/pagePrev.svg') no-repeat;
+  width: 6px;
+  height: 15px;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.pageNext {
+  background: url('/img/admin/faq/pageNext.svg') no-repeat;
+  width: 6px;
+  height: 15px;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.pageNumWrap {
+  display: flex;
+  gap: 20px;
+}
+
+.pageNumWrap a {
+  font-size: 0.875em;
+  color: #aaa;
+  font-weight: 300;
+}
+
+.pageNumWrap a.on {
+  font-weight: 400;
+  color: #000;
+}
+
+.pagination > p {
+  font-size: 0.875em;
+  color: #aaa;
+  font-weight: 300;
+  position: absolute;
+  color: #4b5563;
+  left: 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form p {
+  /* font-size: 1.25em; */
+  color: #4b5563;
+}
+
+.form > div {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.formTitle input {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #d9d9d9;
+  padding: 10px;
+  font-size: 1.25em;
+}
+
+.form input::placeholder {
+  color: #d9d9d9;
+}
+
+.formRecipient button {
+  background-color: #0d688c;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 1em;
+  border-radius: 5px;
+  width: 9%;
+}
+
+.formRecipient button.removeRecipient {
+  padding: 5px !important;
+  text-align: center;
+  width: 100%;
+}
+
+.recipientWrap {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.formRecipient textarea {
+  border-radius: 10px;
+  border: 1px solid #d9d9d9;
+  padding: 10px;
+  font-size: 1.25em;
+  width: 90%;
+  line-height: 1.5;
+  white-space: normal;
+  word-wrap: break-word;
+  min-height: 120px;
+  height: auto;
+  overflow-wrap: break-word;
+  resize: none;
+}
+
+.formFile .fileWrap {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.formFile .fileWrap button {
+  background-color: #0d688c;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 1em;
+  border-radius: 5px;
+  width: 9%;
+}
+
+.formFile input[type='text'] {
+  width: 90%;
+  border: 1px solid #d9d9d9;
+  padding: 10px;
+  font-size: 1.25em;
+  border-radius: 10px;
+}
+
+.formFile input[type='file'] {
+  display: none;
+}
+
+.formContent textarea {
+  border-radius: 10px;
+  border: 1px solid #d9d9d9;
+  padding: 10px;
+  font-size: 1.25em;
+  width: 100%;
+  line-height: 1.5;
+  white-space: normal;
+  word-wrap: break-word;
+  min-height: 300px;
+  height: auto;
+  overflow-wrap: break-word;
+  resize: none;
+}
+
+.form > div.btnWarp {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.btnWarp button {
+  width: 200px;
+  background-color: #0d688c;
+  color: #fff;
+  padding: 10px 40px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.selectedRecipients {
+  width: 90%;
+  min-height: 120px;
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.recipientChip {
+  display: inline-flex;
+  align-items: center;
+  background-color: #f0f0f0;
+  border-radius: 16px;
+  padding: 4px 12px;
+  gap: 8px;
+}
+
+.recipientChip span {
+  font-size: 14px;
+  color: #141414;
+}
+
+.removeRecipient {
+  background: none;
+  border: none;
+  color: #666;
+  cursor: pointer;
+  padding: 0;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.removeRecipient:hover {
+  color: #ff0000;
+}
+
+.previewContent {
+  min-height: 200px;
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: #fff;
+}
+
+.previewContent h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.previewContent h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.previewContent h3 {
+  font-size: 1.17em;
+  font-weight: bold;
+}
+
+.previewContent strong, 
+.previewContent b {
+  font-weight: bold;
+}
+
+.previewContent em, 
+.previewContent i {
+  font-style: italic;
+}
+
+.previewContent ul, 
+.previewContent ol {
+  padding-left: 40px;
+}
+
+.previewContent ul {
+  list-style-type: disc;
+}
+
+.previewContent ol {
+  list-style-type: decimal;
+}
+
+/* 에디터의 기본 스타일 클래스들 */
+.previewContent .ql-size-small {
+  font-size: 0.75em;
+}
+
+.previewContent .ql-size-large {
+  font-size: 1.5em;
+}
+
+.previewContent .ql-size-huge {
+  font-size: 2.5em;
+}
+
+.previewContent .ql-align-center {
+  text-align: center;
+}
+
+.previewContent .ql-align-right {
+  text-align: right;
+}
+
+.previewContent .ql-align-justify {
+  text-align: justify;
+}

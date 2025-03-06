@@ -1,0 +1,74 @@
+.table {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.table thead th {
+  font-size: 1em;
+  color: #4b5563;
+  font-weight: 300;
+  line-height: 70px;
+}
+
+.table thead th.num {
+  position: relative;
+  cursor: pointer;
+}
+
+.table thead th span {
+  font-size: 0.5em;
+}
+
+/* .table thead th.num::after {
+  content: '▼';
+  position: absolute;
+  top: 0;
+  right: -10px;
+  font-size: 11px;
+  color: #d9d9d9;
+} */
+
+.table thead {
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.table thead tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.table tbody {
+  display: block;
+  max-height: 550px;
+  overflow-y: auto;
+}
+
+.table tbody tr {
+  border-bottom: 1px solid #d9d9d9;
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.table tbody td {
+  line-height: 70px;
+  color: #141414;
+  font-size: 1em;
+}
+
+.table tbody td.watchConId {
+  color: #0d688c;
+}
+
+.table tbody td button {
+  cursor: pointer;
+  background-color: #ff3939;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+}

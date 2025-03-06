@@ -1,0 +1,332 @@
+.techListWrap {
+  background: #fff;
+  padding: 40px 30px 10px 30px;
+  border-radius: 10px;
+}
+
+.table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.table thead th {
+  font-size: 1em;
+  color: #4b5563;
+  font-weight: 300;
+  line-height: 70px;
+}
+
+.table thead {
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.table thead tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.table tbody {
+  display: block;
+  max-height: 550px;
+  overflow-y: auto;
+}
+
+.table tbody tr {
+  border-bottom: 1px solid #d9d9d9;
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.table tbody td {
+  line-height: 50px;
+  font-size: 1em;
+  color: #141414;
+}
+
+.table tbody td > p {
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.replyContent {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  max-width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.replyContent div {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;  /* 최대 2줄까지만 표시 */
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+  line-height: 1.4;
+}
+
+.replyContent span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url('/img/admin/tech/arrow.svg');  /* 답글 아이콘 이미지 사용 */
+  background-repeat: no-repeat;
+  background-position: center;
+  /* 또는 텍스트 화살표 사용시: */
+  /* content: "↳"; */
+  flex-shrink: 0;
+}
+
+.table tbody td select {
+  cursor: pointer;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  color: #141414;
+  font-size: 1em;
+  padding: 5px 10px;
+}
+
+.table thead button {
+  background-color: #0d688c;
+  color: #fff;
+  border: none;
+  padding: 20px 26px;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.table thead tr th:first-child,
+.table tbody tr td:first-child {
+  width: 10%;
+}
+
+.table thead tr th:nth-child(2),
+.table tbody tr td:nth-child(2) {
+  width: 40%;
+}
+
+.table thead tr th span {
+  font-size: 0.5em;
+}
+
+.table thead tr th:last-child,
+.table tbody tr td:last-child {
+  width: 15%;
+}
+
+.table tbody button {
+  background-color: #0d688c;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.table tbody td.key {
+  color: #0d688c;
+}
+
+.title {
+  text-align: left;
+}
+
+.bottomTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.searchZone {
+  border: 1px solid rgba(84, 144, 181, 0.67);
+  border-radius: 5px;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  width: 300px;
+}
+
+.searchZone input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding: 5px 10px;
+}
+
+.searchZone button {
+  background-color: #fff;
+  padding: 2px;
+  cursor: pointer;
+}
+
+.pageZone {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pageZone p {
+  color: #4b5563;
+  font-size: 1em;
+}
+
+.pageZone div {
+  border-radius: 5px;
+  border: 1px solid rgba(84, 144, 181, 0.67);
+  width: 100px;
+}
+
+.pageZone div select {
+  width: 100%;
+  border: none;
+  padding: 8px 10px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  font-size: .9em;
+  color: #4b5563;
+  text-align: center;
+  background-color: #0000;
+}
+
+.pageZone button {
+  color: #fff;
+  background-color: #0d688c;
+  padding: 0 20px;
+  line-height: 35px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pagination {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  padding: 20px 0;
+  position: relative;
+  align-items: center;
+}
+
+.pagePrev {
+  background: url('/img/admin/faq/pagePrev.svg') no-repeat;
+  width: 6px;
+  height: 15px;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.pageNext {
+  background: url('/img/admin/faq/pageNext.svg') no-repeat;
+  width: 6px;
+  height: 15px;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.pageNumWrap {
+  display: flex;
+  gap: 20px;
+}
+
+.pageNumWrap a {
+  font-size: 0.875em;
+  color: #aaa;
+  font-weight: 300;
+}
+
+.pageNumWrap a.on {
+  font-weight: 400;
+  color: #000;
+}
+
+.pagination > p {
+  font-size: 0.875em;
+  color: #aaa;
+  font-weight: 300;
+  position: absolute;
+  color: #4b5563;
+  left: 0;
+}
+
+.previewContent {
+  min-height: 200px;
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: #fff;
+}
+
+.previewContent h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.previewContent h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.previewContent h3 {
+  font-size: 1.17em;
+  font-weight: bold;
+}
+
+.previewContent strong, 
+.previewContent b {
+  font-weight: bold;
+}
+
+.previewContent em, 
+.previewContent i {
+  font-style: italic;
+}
+
+.previewContent ul, 
+.previewContent ol {
+  padding-left: 40px;
+}
+
+.previewContent ul {
+  list-style-type: disc;
+}
+
+.previewContent ol {
+  list-style-type: decimal;
+}
+
+/* 에디터의 기본 스타일 클래스들 */
+.previewContent .ql-size-small {
+  font-size: 0.75em;
+}
+
+.previewContent .ql-size-large {
+  font-size: 1.5em;
+}
+
+.previewContent .ql-size-huge {
+  font-size: 2.5em;
+}
+
+.previewContent .ql-align-center {
+  text-align: center;
+}
+
+.previewContent .ql-align-right {
+  text-align: right;
+}
+
+.previewContent .ql-align-justify {
+  text-align: justify;
+}

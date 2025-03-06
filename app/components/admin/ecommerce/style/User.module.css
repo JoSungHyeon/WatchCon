@@ -1,0 +1,88 @@
+.userWrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.userWrapper.on {
+  position: absolute;
+  top: 10px;
+  width: calc(100% - 100px);
+  height: calc((100% - 20px));
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.tableWrapper {
+  width: 100%;
+  padding: 20px;
+  max-height: 350px;
+}
+
+.tableWrapper.on {
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.tableTop {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.tableTop button {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.tableWrapper .table {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.table tbody {
+  display: block;
+  max-height: 700px;
+  overflow-y: auto;
+}
+
+.table thead tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.table tbody tr {
+  border-bottom: 1px solid #d9d9d9;
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.tableWrapper .table thead th {
+  font-size: 1em;
+  color: #4b5563;
+  font-weight: 300;
+  line-height: 70px;
+}
+
+.tableWrapper .table thead {
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.tableWrapper .table tbody tr {
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.tableWrapper .table tbody td {
+  line-height: 70px;
+  color: #141414;
+  font-size: 1em;
+}

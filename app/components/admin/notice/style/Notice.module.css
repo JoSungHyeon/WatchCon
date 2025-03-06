@@ -1,0 +1,100 @@
+.container {
+  display: flex;
+}
+
+.section {
+  background-color: #eeeeee;
+  width: calc(100% - 400px);
+  /* height: 100vh; */
+  padding: 10px 50px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sectionTop {
+  display: flex;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sectionTop button {
+  color: #d3d3d3;
+  font-size: 1.5em;
+  border: none;
+  padding: 15px 60px;
+  border-radius: 10px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.sectionTop button.on {
+  color: #fff;
+  background-color: #48bed9;
+}
+
+.dateWrap {
+  display: flex;
+  gap: 10px;
+  height: 98%;
+  padding-right: 10px;
+  align-items: center;
+}
+
+.dateWrap button {
+  padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0d688c;
+    color: #fff;
+    font-size: 1em;
+    height: 42px;
+}
+
+.calenderWrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.calenderWrap {
+  position: relative;
+}
+
+.datepickerInput {
+  padding: 8px 16px;
+  padding-right: 35px;
+  border: 1px solid rgba(84, 144, 181, 0.67);
+  border-radius: 4px;
+  font-size: 1em;
+  width: 185px;
+  position: relative;
+  cursor: pointer;
+}
+
+.calenderWrap::after {
+  position: absolute;
+  content: '';
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+  background: url('/img/admin/faq/calender.svg') no-repeat;
+  width: 24px;
+  height: 24px;
+}
+
+.calenderWrapper span {
+  font-size: 1.5em;
+  color: #d9d9d9;
+}
+
+.sectionBottom {
+  border-radius: 10px;
+  background-color: #fff;
+  width: 100%;
+  padding: 40px 30px 10px 30px;
+}

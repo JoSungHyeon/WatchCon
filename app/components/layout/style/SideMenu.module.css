@@ -1,0 +1,96 @@
+.sideMenuWrap {
+  background-color: #fff;
+  width: 400px;
+  height: 100vh;
+  position: relative;
+  box-shadow: 10px 0 4px rgba(0, 0, 0, 0.05);
+}
+
+.sideMenuWrap .sideMenuInner {
+  position: absolute;
+  width: 90%;
+  top: calc(50% + 120px);
+  left: 50%;
+  transform: translate(-50%, calc(-50% - 60px));
+}
+
+.sideTop {
+  border-bottom: 1px solid #d9d9d9;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px 20px;
+}
+
+.sideTop h2 {
+  font-size: 2em;
+}
+
+.sideTop p {
+  font-size: 1em;
+  color: #4b5563;
+}
+
+.sideMiddle {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px 20px 100px 20px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.sideMiddle a {
+  font-size: 1.5em;
+  font-weight: 200;
+}
+
+.sideMiddle a.on {
+  font-weight: 600;
+}
+
+.sideBottom ul {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.sideBottom ul li {
+  width: 50%;
+}
+
+.sideBottom ul a {
+  padding: 0 20px;
+  position: relative;
+  text-align: center;
+  display: block;
+  color: #4b5563;
+}
+
+.sideBottom ul a span {
+  font-size: 0.5em;
+  margin-left: 6px;
+}
+
+.sideBottom ul a::before {
+  position: absolute;
+  content: '';
+  width: 1px;
+  height: 100%;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #d9d9d9;
+}
+
+.sideBottom ul li:last-child a::before {
+  display: none;
+}
+
+/* .sideBottom ul li:last-child a::after {
+  position: absolute;
+  content: '▼';
+  font-size: 0.5em;
+  right: -5px;
+  top: 50%;
+  transform: translateY(-50%);
+} */

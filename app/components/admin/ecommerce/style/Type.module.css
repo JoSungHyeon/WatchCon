@@ -1,0 +1,29 @@
+.typeWrap {
+  display: inline-block;
+}
+
+.typeWrap ul {
+  display: flex;
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.typeWrap ul a {
+  color: #838383;
+  font-size: 0.875em;
+  display: block;
+  line-height: 30px;
+  padding: 0 20px;
+  border-right: 1px solid #d3d3d3;
+}
+
+.typeWrap ul li:last-child a {
+  border: none;
+}
+
+.typeWrap ul a.on {
+  color: #fff;
+  background-color: #012840;
+}

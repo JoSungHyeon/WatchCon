@@ -1,0 +1,280 @@
+.table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.table.on {
+  position: relative;
+  top: -90px;
+  background-color: #fff;
+}
+
+.table thead th {
+  font-size: 1em;
+  color: #4b5563;
+  font-weight: 300;
+  line-height: 70px;
+}
+
+.table thead th.num {
+  position: relative;
+  cursor: pointer;
+}
+
+.table thead th.num span {
+  font-size: 0.5em;
+}
+
+/* .table thead th.num::after {
+  content: '▼';
+  position: absolute;
+  top: 0;
+  right: -10px;
+  font-size: 11px;
+  color: #d9d9d9;
+} */
+
+.table thead {
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.table thead tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.table tbody {
+  display: block;
+  max-height: 590px;
+  overflow-y: auto;
+}
+
+.table.on tbody {
+  max-height: 630px;
+}
+
+.table tbody tr {
+  border-bottom: 1px solid #d9d9d9;
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.table tbody td {
+  line-height: 70px;
+  color: #141414;
+  font-size: 1em;
+}
+
+.table tbody td input {
+  text-align: center;
+}
+
+.table tbody td input[type='number'] {
+  background-color: #fff;
+}
+
+.table tbody select {
+  cursor: pointer;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  color: #141414;
+  font-size: 1em;
+  padding: 5px 10px;
+}
+
+.table tbody td.watchConId {
+  color: #0d688c;
+}
+
+.table tbody td > button {
+  cursor: pointer;
+  background-color: #ff3939;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.table tbody td button.edit {
+  background-color: #0d688c;
+  font-size: 1em;
+}
+
+/* Feature Table */
+
+.featTableHead tr th:first-child,
+.featTableBody tr td:first-child {
+  width: 20%;
+  text-align: left;
+}
+
+.featTableHead tr th {
+  padding-right: 10px;
+}
+
+.featTableHead tr th,
+.featTableBody tr td {
+  text-align: left;
+  text-align: center;
+}
+
+.featTableBody input[type='checkbox'] {
+  width: 28px;
+  height: 28px;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.featTableBody input[type='text'] {
+  width: 80px;
+  line-height: 44px;
+  color: #141414;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1em;
+}
+
+.featTableBody td {
+  /* line-height: 55px !important; */
+  position: relative;
+}
+
+.featTableBody tr td {
+  font-size: 1em;
+  color: #4b5563;
+  font-weight: 300;
+  line-height: 70px;
+}
+
+.featTableBody .btnWrap {
+  width: 100% !important;
+}
+
+.featTableBody .btnWrap,
+.featTableBody .newFeature,
+.featTableBody .editFeature {
+  border: none !important;
+}
+
+.featTableBody .newFeature td,
+.featTableBody .editFeature td {
+  height: 200px !important;
+}
+
+
+.featTableBody .btnWrap td {
+  height: 100px !important;
+  display: flex;
+  width: 100% !important;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.featTableBody .btnWrap td button {
+  background-color: #0d688c;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  line-height: 35px;
+  font-size: 1em;
+  width: 140px;
+}
+
+.featTableBody .btnWrap td > button:last-child {
+  background-color: #ff3939;
+}
+
+.cancelBtn {
+  background-color: #d9d9d9 !important;
+}
+
+.newFeature td,
+.editFeature td {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100% !important;
+}
+
+.newFeature td p,
+.editFeature td p {
+  font-size: 1em;
+}
+
+.newFeature input,
+.editFeature input {
+  width: 300px !important;
+}
+
+.newFeature td,
+.editFeature td {
+  padding: 20px 0;
+}
+
+.dateWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-right: 20px;
+}
+
+.dateWrap > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dateWrap > div p {
+  font-size: 1em;
+}
+
+.calenderWrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.calenderWrap {
+  position: relative;
+}
+
+.datepickerInput {
+  padding: 0px;
+  padding-right: 35px;
+  border: 1px solid rgba(84, 144, 181, 0.67);
+  border-radius: 4px;
+  font-size: 1em;
+  width: 185px;
+  position: relative;
+  cursor: pointer;
+}
+
+.calenderWrap::after {
+  position: absolute;
+  content: '';
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+  background: url('/img/admin/faq/calender.svg') no-repeat;
+  width: 24px;
+  height: 24px;
+}
+
+.calenderWrapper span {
+  font-size: 1.5em;
+  color: #d9d9d9;
+}
+
+.disabled {
+  opacity: 0.6;
+  pointer-events: none;
+  background-color: #f5f5f5;
+}

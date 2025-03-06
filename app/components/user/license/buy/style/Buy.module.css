@@ -1,0 +1,219 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(84, 144, 181, 0.67);
+  padding: 150px 80px 30px 80px;
+  position: relative;
+}
+
+.contentWrap {
+  padding: 50px 20px;
+  max-width: 1050px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  border: 1px solid #4b5563;
+  position: relative;
+}
+
+.contentWrap > div {
+  width: 50%;
+}
+
+.contentWrap .contentLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px;
+}
+
+.contentWrap select {
+  width: 100px;
+  border-radius: 5px;
+  border: 1px solid rgba(84, 144, 181, 0.67);
+  line-height: 35px;
+  padding: 5px 20px;
+  font-size: 1em;
+  height: 45px;
+  font-size: 1em;
+  color: #141414;
+}
+
+.contentWrap > header {
+  position: absolute;
+  top: 30px;
+  left: 70px;
+}
+
+.contentWrap > header select:last-child {
+  width: 150px;
+}
+
+.contentWrap .contentLeft input {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #d9d9d9;
+  line-height: 35px;
+  padding: 5px 20px;
+  font-size: 1em;
+}
+
+.contentWrap .contentLeft input::placeholder {
+  color: #aaa;
+}
+
+.contentWrap .contentLeft .cardExpiration input {
+  width: 48%;
+}
+
+.contentWrap
+  .contentLeft
+  .cardExpiration
+  input:nth-of-type(1) {
+  margin-right: 4%;
+}
+
+.contentWrap .contentLeft > div p {
+  color: #141414;
+  font-size: 1em;
+  position: relative;
+  display: inline-block;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+
+.contentWrap .contentLeft > div p::after {
+  content: '*';
+  position: absolute;
+  top: -2px;
+  right: -10px;
+  color: #e30000;
+}
+
+.contentWrap .contentLeft > div p.errorText {
+  color: #ff0000 !important;
+  font-size: 12px;
+  margin-top: 4px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-weight: normal;
+}
+
+.contentWrap .contentLeft > div p.errorText::after {
+  content: none;
+}
+
+.contentWrap .contentRight {
+  padding: 50px;
+}
+
+.contentWrap .contentRight .rightTop {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.contentWrap .contentRight input {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #d9d9d9;
+  line-height: 35px;
+  padding: 5px 20px;
+  font-size: 1em;
+}
+
+.contentWrap .contentRight .rightTop p {
+  color: #141414;
+  font-size: 1em;
+  position: relative;
+  display: inline-block;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+
+.rightBottom .totalWrap .totalPrice {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 0 40px 0;
+}
+
+.rightBottom .totalWrap .totalPrice p {
+  color: #4b5563;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.rightBottom .totalWrap .totalPrice strong {
+  color: #141414;
+  font-weight: 700;
+  font-size: 2.5em;
+}
+
+.rightBottom .totalWrap button {
+  width: 100%;
+  line-height: 45px;
+  background-color: #012840;
+  color: #fff !important;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .container {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    padding: 150px 80px 30px 80px;
+    position: relative;
+  }
+
+  .contentWrap {
+    padding: 20px;
+    max-width: 1050px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+  }
+
+  .contentWrap > header {
+    position: absolute;
+    top: -50px;
+    left: 20px;
+  }
+
+  .contentWrap .contentLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0px;
+    width: 100%;
+  }
+
+  .contentWrap > div {
+    width: 100%;
+  }
+
+  .contentWrap .contentRight {
+    padding: 50px 0 0 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    padding: 160px 30px 30px 30px;
+    position: relative;
+  }
+
+  .contentWrap .contentRight {
+    padding: 50px 0px 0 0px;
+  }
+}

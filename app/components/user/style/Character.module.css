@@ -1,0 +1,344 @@
+#character {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+#character::before {
+  content: '';
+  background: url('/img/character/character_bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+.characterInner {
+  padding: 0 44px;
+  display: flex;
+  gap: 6.25em;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  overflow-y: hidden;
+  position: relative;
+  padding: 0 44px;
+  display: flex;
+  gap: 6.25em;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  overflow-y: hidden;
+  position: relative;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.characterInner .textWrap {
+  width: calc(49% - 6.25em);
+  display: flex;
+  flex-direction: column;
+  gap: 1.88em;
+  width: calc(49% - 6.25em);
+  display: flex;
+  flex-direction: column;
+  gap: 1.88em;
+}
+
+.characterInner .textWrap h3 {
+  word-break: keep-all;
+  transition: all 0.3s;
+  font-size: 3em;
+  font-weight: 700;
+}
+
+.characterInner .textWrap strong {
+  font-size: 1.5em;
+  word-break: keep-all;
+  transition: all 0.3s;
+  padding-right: 100px;
+}
+
+.characterInner .textWrap strong .pointColor {
+  color: #0173ff;
+  color: #0173ff;
+}
+
+.characterInner .textWrap strong .pointBg {
+  background-color: rgba(39, 242, 242, 0.3);
+  background-color: rgba(39, 242, 242, 0.3);
+}
+
+.characterInner .textWrap p {
+  font-size: 1.25em;
+  word-break: keep-all;
+  transition: all 0.3s;
+}
+
+.characterInner .itemWrap {
+  width: 830px;
+  height: 100%;
+  display: flex;
+  gap: 10px;
+  margin-top: 360px;
+  position: relative;
+}
+
+.characterInner .itemWrap > div {
+  width: calc((100% - 10px) / 2);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: calc((100% - 10px) / 2);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.characterInner .itemWrap > div:last-child {
+  padding-top: 200px;
+  padding-top: 200px;
+}
+
+.characterInner .itemWrap > div .item {
+  background-color: #fff;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  padding: 30px 30px 100px 30px;
+  background-color: #fff;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  padding: 30px 30px 100px 30px;
+}
+
+.characterInner .itemWrap > div .item > img {
+  border-radius: 12px;
+  border-radius: 12px;
+}
+
+.characterInner .itemWrap > div .item .itemDesc {
+  text-align: center;
+  text-align: center;
+}
+
+.characterInner .itemWrap > div .item .itemDesc strong {
+  font-size: 2em;
+  word-break: keep-all;
+  font-size: 2em;
+  word-break: keep-all;
+}
+
+.characterInner .itemWrap > div .item .itemDesc p {
+  font-size: 1.25em;
+  padding-top: 40px;
+  word-break: keep-all;
+  color: #4b5563;
+}
+
+.mobileSwiper {
+  width: 100%;
+  overflow: hidden;
+  /* background-color: #b6d2dd; */
+  padding: 60px 40px;
+}
+
+.swiperSlide {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  height: auto;
+}
+
+.swiperSlide .item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.swiperSlide .item img {
+  border-radius: 10px;
+}
+
+.swiperSlide .itemDesc {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.swiperSlide .itemDesc strong {
+  font-size: 1.25em;
+  font-weight: 700;
+  color: #141414;
+}
+
+.swiperSlide .itemDesc p {
+  font-size: 0.875em;
+  color: #4b5563;
+  word-break: keep-all;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1600px) {
+  .characterInner .textWrap h3 {
+    font-size: 2.25em;
+    word-break: keep-all;
+  }
+
+  .characterInner .textWrap strong {
+    font-size: 1.5em;
+    padding: 0;
+  }
+
+  .characterInner .textWrap p {
+    font-size: 1.25em;
+  }
+
+  .characterInner .itemWrap {
+    transform: scale(0.75);
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .characterInner {
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .characterInner .textWrap {
+    width: 100%;
+    gap: 1em;
+  }
+
+  .characterInner {
+    padding: 0;
+  }
+
+  .characterInner .textWrap {
+    padding: 0 40px;
+  }
+  .characterInner .itemWrap {
+    transform: scale(0.75);
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .characterInner {
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .characterInner .textWrap {
+    width: 100%;
+    gap: 1em;
+  }
+
+  .characterInner {
+    padding: 0;
+  }
+
+  .characterInner .textWrap {
+    padding: 0 40px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .characterInner {
+    padding: 0;
+  }
+
+  .characterInner .textWrap {
+    padding: 0 40px;
+  }
+
+  .characterInner .textWrap h3 {
+    font-size: 1.5em;
+    word-break: keep-all;
+  }
+
+  .characterInner .textWrap strong {
+    font-size: 1.25em;
+    padding: 0;
+  }
+
+  .characterInner .textWrap p {
+    font-size: 1em;
+  }
+  .characterInner {
+    padding: 0;
+  }
+
+  .characterInner .textWrap {
+    padding: 0 40px;
+  }
+
+  .characterInner .textWrap h3 {
+    font-size: 1.5em;
+    word-break: keep-all;
+  }
+
+  .characterInner .textWrap strong {
+    font-size: 1.25em;
+    padding: 0;
+  }
+
+  .characterInner .textWrap p {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  #character {
+    height: auto;
+    padding: 20px 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .characterInner .textWrap {
+    width: 100%;
+    gap: 0.25em;
+  }
+
+  .characterInner .textWrap h3 {
+    font-size: 1.25em;
+    word-break: keep-all;
+  }
+
+  .characterInner .textWrap strong {
+    font-size: 1em;
+    padding: 0;
+  }
+
+  .characterInner .textWrap p {
+    font-size: 0.75em;
+  }
+
+  .mobileSwiper {
+    padding: 10px 70px;
+  }
+
+  .characterInner {
+    gap: 5px;
+  }
+
+}

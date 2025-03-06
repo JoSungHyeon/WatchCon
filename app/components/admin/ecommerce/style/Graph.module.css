@@ -1,0 +1,157 @@
+.graphWrapper {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+
+.graphWrapper .connectionWrap {
+  width: calc(55% - 20px);
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px 30px;
+}
+
+.connectionTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.connectionTop .name,
+.downloadTop .name {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.connectionTop .name strong,
+.downloadTop .name strong {
+  font-size: 1.25em;
+  font-weight: 400;
+}
+
+.connectionTop .name .type,
+.downloadTop .name .type {
+  display: flex;
+  gap: 10px;
+}
+
+.connectionTop .name .type span,
+.downloadTop .name .type span {
+  font-size: 0.8125em;
+  font-weight: 400;
+  position: relative;
+  padding-left: 16px;
+  color: #4b5563;
+}
+
+.connectionTop .name .type span:first-child::after,
+.downloadTop .name .type span:first-child::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background-color: #48bed9;
+  border-radius: 50%;
+}
+
+.connectionTop .name .type span:last-child::after,
+.downloadTop .name .type span:last-child::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background-color: #012840;
+  border-radius: 50%;
+}
+
+.downloadWrap {
+  width: 45%;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px 30px;
+}
+
+.downloadTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.downloadTop .name {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.downloadTop .name strong {
+  font-size: 1.25em;
+  font-weight: 400;
+}
+
+.downloadTop .name p {
+  font-size: 0.875em;
+  font-weight: 400;
+  color: #838383;
+}
+
+.graph {
+  padding-top: 20px;
+  height: 300px;
+}
+
+.downloadBottom .graph {
+  padding-top: 10px;
+  height: 300px;
+}
+
+.downloadSub {
+  padding-top: 20px;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
+
+.downloadSub .subItem {
+  position: relative;
+}
+
+.downloadSub .subItem:first-child::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -25px;
+  width: 13px;
+  height: 13px;
+  background-color: #48bed9;
+  border-radius: 50%;
+}
+
+.downloadSub .subItem:last-child::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -25px;
+  width: 13px;
+  height: 13px;
+  background-color: #012840;
+  border-radius: 50%;
+}
+
+.downloadSub .subItem span {
+  color: #4b5563;
+  font-size: 1em;
+}
+
+.downloadSub .subItem p {
+  color: #d3d3d3;
+  font-size: 0.875em;
+}

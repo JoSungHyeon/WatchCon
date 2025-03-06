@@ -1,0 +1,64 @@
+.featureTop {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.featureTop select {
+font-size: 1em;
+    color: #141414;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.featureBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #d9d9d9;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+.featureBottom > button {
+  width: 45px;
+  height: 45px;
+  border: none;
+  cursor: pointer;
+}
+
+.featureBottom .datePrev {
+  background-image: url('/img/admin/pricing/prev.svg');
+  background-size: cover;
+  background-position: center;
+}
+
+.featureBottom .dateNext {
+  background-image: url('/img/admin/pricing/next.svg');
+  background-size: cover;
+  background-position: center;
+}
+
+.dateNumWrap {
+  display: flex;
+  gap: 50px;
+}
+
+.dateNumWrap > div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.dateNumWrap > div input[type='text'] {
+  width: 160px;
+  height: 40px;
+  border: 1px solid rgba(84, 144, 181, 0.67);
+  border-radius: 5px;
+}
+
+.dateNumWrap p {
+  font-size: 1em;
+  color: #141414;
+}

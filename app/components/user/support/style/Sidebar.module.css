@@ -1,0 +1,87 @@
+.sidebar {
+  @apply fixed top-0 left-0 h-full w-64 bg-white border-r border-gray-200 overflow-y-auto;
+  z-index: 40;
+}
+
+.sidebarHeader {
+  @apply px-6 py-4 border-b border-gray-200;
+}
+
+.sidebarTitle {
+  @apply text-lg font-semibold text-gray-900;
+}
+
+.nav {
+  @apply px-3 py-2;
+}
+
+.navSection {
+  @apply mb-6;
+}
+
+.sectionTitle {
+  @apply px-3 mb-2 text-sm font-semibold text-gray-900 uppercase tracking-wider;
+}
+
+.navList {
+  @apply space-y-1;
+}
+
+.navItem {
+  @apply block px-3 py-2 text-sm text-gray-700 rounded-md hover:bg-gray-50 hover:text-gray-900 transition-colors;
+}
+
+.navItemActive {
+  @apply bg-blue-50 text-blue-700;
+}
+
+.navItemWithChildren {
+  @apply flex items-center justify-between;
+}
+
+.navItemIcon {
+  @apply mr-2 h-4 w-4;
+}
+
+.navItemExpand {
+  @apply ml-auto h-4 w-4;
+}
+
+.subNav {
+  @apply ml-4 mt-1 space-y-1;
+}
+
+.spacer {
+  @apply my-4 border-t border-gray-200;
+}
+
+/* 다크 모드 지원 */
+@media (prefers-color-scheme: dark) {
+  .sidebar {
+    @apply bg-gray-900 border-gray-700;
+  }
+
+  .sidebarHeader {
+    @apply border-gray-700;
+  }
+
+  .sidebarTitle {
+    @apply text-white;
+  }
+
+  .sectionTitle {
+    @apply text-gray-400;
+  }
+
+  .navItem {
+    @apply text-gray-300 hover:bg-gray-800 hover:text-white;
+  }
+
+  .navItemActive {
+    @apply bg-gray-800 text-white;
+  }
+
+  .spacer {
+    @apply border-gray-700;
+  }
+}

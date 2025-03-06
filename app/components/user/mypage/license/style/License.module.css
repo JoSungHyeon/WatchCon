@@ -1,0 +1,350 @@
+#license {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+#license .sectionRight {
+  background-color: #eee;
+  height: 100%;
+  width: calc(100% - 400px);
+  position: relative;
+}
+
+.licenseInner {
+  width: 90%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 150px;
+}
+
+.licenseInner .licenseInfo {
+  max-height: 280px;
+  overflow-y: auto;
+}
+
+#license .tableWrap {
+  padding: 0 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+#license table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#license table thead {
+  border-bottom: 1px solid #d9d9d9;
+}
+
+#license table thead th {
+  color: #4b5563;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+#license table th,
+#license table td {
+  padding: 12px;
+}
+
+#license table td {
+  text-align: center;
+}
+
+#license table td[name='key'],
+#license table td[name='history_key'] {
+  color: #0d688c;
+  font-weight: 600;
+}
+
+#license table td a,
+#license table td button {
+  color: #fff;
+  background-color: #0d688c;
+  display: block;
+  padding: 0 20px;
+  line-height: 29px;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+#license table td span {
+  width: 29px;
+  height: 29px;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  display: block;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+#license table td input[type='checkbox'] {
+  width: 29px;
+  height: 29px;
+  border-radius: 5px;
+  border: 1px solid #d9d9d9;
+  display: block;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+#license .licenseHistory {
+  padding-top: 50px;
+}
+
+#license .licenseHistory h2 {
+  color: #4b5563;
+  font-size: 1em;
+}
+
+#license .licenseHistory tr {
+  border-bottom: 1px solid #d9d9d9;
+}
+
+#license .licenseHistory tr:last-child {
+  border: none;
+}
+
+.tablePageWrap {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  padding: 20px 0;
+  align-items: center;
+}
+
+.tablePageWrap .pagePrev {
+  background: url('/img/mypage/pagePrev.png') no-repeat;
+  width: 6px;
+  height: 15px;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.tablePageWrap .pageNext {
+  background: url('/img/mypage/pageNext.png') no-repeat;
+  width: 6px;
+  height: 15px;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.tablePageWrap .pageNumWrap {
+  display: flex;
+  gap: 20px;
+}
+
+.tablePageWrap .pageNumWrap a {
+  font-size: 0.875em;
+  color: #aaa;
+  font-weight: 300;
+}
+
+.tablePageWrap .pageNumWrap a.on {
+  font-weight: 400;
+  color: #000;
+}
+
+/* Mobile */
+
+.linkTitle {
+  position: static;
+  top: 0;
+  width: 100%;
+  padding: 20px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  color: #141414;
+  font-size: 1em;
+  z-index: 10;
+  margin-top: 100px;
+}
+
+/* .linkTitle::before {
+  content: '▼';
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 0.875em;
+  color: #4b5563;
+} */
+
+.infoItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.infoItem .itemLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.infoItem .itemLeft .leftTop {
+  display: flex;
+  gap: 10px;
+}
+
+.infoItem .itemLeft .leftTop .newDate {
+  color: #4b5563;
+}
+
+.infoItem .itemLeft .leftBottom {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.infoItem .itemLeft .leftBottom input {
+  width: 15px;
+  height: 15px;
+}
+
+.infoItem .itemLeft .leftBottom .checkWrap {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.infoItem .itemLeft .leftBottom a,
+.infoItem .itemLeft .leftBottom button {
+  display: block;
+  background-color: #0d688c;
+  padding: 0 10px;
+  line-height: 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.key {
+  color: #0d688c;
+  font-weight: 500;
+}
+
+.checkWrap span {
+  font-size: 0.875em;
+  color: #4b5563;
+}
+
+.licenseHistory h2 {
+  color: #4b5563;
+  font-size: 0.925em;
+}
+
+.licenseHistory .infoItem {
+  border-top: 1px solid #d9d9d9;
+  align-items: flex-end;
+}
+
+.noData {
+  text-align: center;
+  padding: 1em 0;
+}
+
+.mobileMenu {
+  width: 100%;
+  border-bottom: 1px solid #eee;
+}
+
+.linkTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.arrow {
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid #333;
+  border-bottom: 2px solid #333;
+  transform: rotate(45deg);
+  transition: transform 0.3s ease;
+}
+
+.arrow.open {
+  transform: rotate(-135deg);
+}
+
+.menuItems {
+  background: #fff;
+  border-top: 1px solid #eee;
+  width: 100%;
+}
+
+.menuItem {
+  display: block;
+  padding: 15px;
+  color: #333;
+  text-decoration: none;
+  border-bottom: 1px solid #eee;
+}
+
+.menuItem:hover {
+  background: #f5f5f5;
+}
+@media only screen and (max-width: 1600px) {
+  #license .sectionRight {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .rightInfo > div div {
+    width: 40%;
+  }
+
+  #license .tableWrap {
+    padding: 0px 10px;
+  }
+
+  #license table th,
+  #license table td {
+    padding: 16px 10px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  #license {
+    padding: 0 30px;
+    flex-direction: column;
+  }
+
+  #license .sectionRight {
+    background-color: #fff;
+    width: 100%;
+  }
+
+  .licenseInner {
+    padding: 0;
+    width: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #license .tableWrap {
+    padding: 0px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .infoItem {
+    font-size: 14px;
+  }
+
+  .key {
+    letter-spacing: -1px;
+  }
+}

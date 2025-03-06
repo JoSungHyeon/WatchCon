@@ -1,0 +1,101 @@
+.form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 100px;
+}
+
+.form header {
+  display: flex;
+  position: absolute;
+  top: -15px;
+  right: 0;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+}
+
+.form .inputWrap {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.form .inputWrap input {
+  width: 35px;
+  height: 35px;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+}
+
+.form .inputWrap span {
+  font-size: 1.25em;
+  color: #4b5563;
+}
+
+.form p {
+  color: #4b5563;
+  font-size: 1.25em;
+}
+
+.form .formTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form .formTitle input {
+  width: 100%;
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+  font-size: 1.25em;
+  padding: 10px;
+}
+
+.form .formTitle input::placeholder {
+  color: #d9d9d9;
+}
+
+.form .formContent {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.form .formContent textarea {
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  width: 100%;
+  resize: none;
+  padding: 10px;
+  font-size: 1.25em;
+  min-height: 500px;
+}
+
+.form .formContent textarea::placeholder {
+  color: #d9d9d9;
+}
+
+.form > button {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  padding: 16px 30px;
+  color: #fff;
+  background-color: #0d688c;
+  border-radius: 5px;
+  width: 200px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.formMessage {
+  width: 100%;
+  height: auto;
+  border: 1px solid #d9d9d9;
+  font-size: 1em;
+  padding: 10px;
+  border-radius: 5px;
+  resize: none;
+}

@@ -1,0 +1,78 @@
+#introduction {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: #f9f9f9;
+}
+
+#introduction .introductionInner {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  padding: 120px 20px 20px 20px;
+  align-items: center;
+  gap: 30px;
+}
+
+.introductionText {
+  text-align: center;
+}
+
+.introductionText h2 {
+  font-size: 3em;
+  font-weight: 800;
+}
+
+.introductionText strong {
+  font-size: 1.75em;
+  padding-top: 10px;
+  font-weight: 600;
+  display: block;
+}
+
+.introductionText p span {
+  color: #0173ff;
+}
+
+.introductionText p {
+  font-size: 1.75em;
+  font-weight: 400;
+}
+
+.introductionImg {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.introductionImg img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 1300px) {
+  #introduction .introductionInner {
+    padding: 0 20px;
+  }
+
+  .introductionText h2 {
+    font-size: 2em;
+  }
+
+  .introductionText strong {
+    font-size: 1.25em;
+    padding-top: 20px;
+    font-weight: 400;
+    display: block;
+  }
+
+  .introductionText p {
+    font-size: 1.25em;
+    font-weight: 400;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .introductionImg {
+    width: 100%;
+  }
+}

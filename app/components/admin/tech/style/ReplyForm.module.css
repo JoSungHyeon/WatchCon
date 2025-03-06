@@ -1,0 +1,225 @@
+.requestZone,
+.responseZone {
+  background-color: #fff;
+  padding: 20px 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.responseZone {
+  margin-top: 20px;
+}
+
+.requestZone p,
+.responseZone p {
+  color: #4b5563;
+  font-size: 1.25em;
+  padding-bottom: 10px;
+}
+
+.requestZone .reqTop input {
+  width: 100%;
+  border: 1px solid #d9d9d9;
+  line-height: 45px;
+  font-size: 1.25em;
+  border-radius: 10px;
+  color: #141414;
+  padding: 0 10px;
+}
+
+.requestZone .reqMiddle {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+}
+
+.requestZone .reqMiddle > div {
+  width: calc((100% - 100px) / 2);
+}
+
+.requestZone .reqMiddle > div input {
+  width: 100%;
+  border: 1px solid #d9d9d9;
+  line-height: 45px;
+  font-size: 1.25em;
+  border-radius: 10px;
+  color: #141414;
+  padding: 0 10px;
+}
+
+.requestZone .reqBottom div {
+  width: 100%;
+  height: 300px;
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+  padding: 10px;
+  resize: none;
+}
+
+.requestZone .reqBottom div p {
+  color: #141414;
+}
+
+.responseZone .resTop {
+  display: flex;
+  justify-content: space-between;
+}
+
+.responseZone .resTop > div {
+  width: calc((100% - 100px) / 2);
+}
+
+.responseZone .resTop .resTitle input {
+  width: 100%;
+  border: 1px solid #d9d9d9;
+  line-height: 45px;
+  font-size: 1.25em;
+  border-radius: 10px;
+  color: #141414;
+  padding: 0 10px;
+}
+
+.responseZone .resTop .resTitle input::placeholder {
+  color: #d9d9d9;
+}
+
+.responseZone .resTop input[type='text'] {
+  width: 100%;
+  border: 1px solid #d9d9d9;
+  line-height: 45px;
+  font-size: 1.25em;
+  border-radius: 10px;
+  color: #141414;
+  padding: 0 10px;
+}
+
+.responseZone .resTop .resFile .fileWrap {
+  display: flex;
+  gap: 10px;
+}
+
+.responseZone .resTop .resFile button {
+  background-color: #0d688c;
+  color: #fff;
+  border-radius: 5px;
+  text-align: center;
+  width: 100px;
+  cursor: pointer;
+}
+
+.responseZone .resTop input[type='file'] {
+  display: none;
+}
+
+.resContent textarea {
+  width: 100%;
+  height: 150px;
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+  padding: 10px;
+  resize: none;
+  font-size: 1.25em;
+  color: #141414;
+}
+
+.resContent textarea::placeholder {
+  color: #d9d9d9;
+}
+
+.btnWrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btnWrapLeft {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.btnWrap button,
+.detailBtn {
+  cursor: pointer;
+  width: 200px;
+  text-align: center;
+  line-height: 45px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #0d688c;
+}
+
+
+.previewContent {
+  min-height: 200px;
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: #fff;
+}
+
+.previewContent h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.previewContent h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.previewContent h3 {
+  font-size: 1.17em;
+  font-weight: bold;
+}
+
+.previewContent strong, 
+.previewContent b {
+  font-weight: bold;
+}
+
+.previewContent em, 
+.previewContent i {
+  font-style: italic;
+}
+
+.previewContent ul, 
+.previewContent ol {
+  padding-left: 40px;
+}
+
+.previewContent ul {
+  list-style-type: disc;
+}
+
+.previewContent ol {
+  list-style-type: decimal;
+}
+
+/* 에디터의 기본 스타일 클래스들 */
+.previewContent .ql-size-small {
+  font-size: 0.75em;
+}
+
+.previewContent .ql-size-large {
+  font-size: 1.5em;
+}
+
+.previewContent .ql-size-huge {
+  font-size: 2.5em;
+}
+
+.previewContent .ql-align-center {
+  text-align: center;
+}
+
+.previewContent .ql-align-right {
+  text-align: right;
+}
+
+.previewContent .ql-align-justify {
+  text-align: justify;
+}

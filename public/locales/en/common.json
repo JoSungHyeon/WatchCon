@@ -1,0 +1,351 @@
+{
+    "header": {
+        "utils" : {
+            "login": "Login",
+            "logout": "Logout",
+            "inquiry": "Contact Us",
+            "Manager": "Manager"
+        },
+        "nav" : {
+            "product": "Product introduction",
+            "download": "Download",
+            "support": "Technical support",
+            "locales": "EN"
+        }
+    },
+
+    "footer": {
+        "name": "Representative",
+        "name_p": "Lee Eun-seok",
+        "mail": "E-mail",
+        "mail_p": "sales@jpeople.co.kr",
+        "business": "Business registration number",
+        "business_p": "292-86-01693",
+        "address": "Address",
+        "address_p": "Room 926, 9th floor, 150 Dongtan Yeongcheon-ro, Hwaseong-si, Gyeonggi-do, Republic of Korea",
+        "address_span": "(Yeongcheon-dong, Hyundai Silicon Ally Dongtan)",
+        "number": "call",
+        "number_p": "031-375-3940",
+        "number_span": "(2024-Hwasong Dongtan-4196)",
+        "data": {
+            "data1": {
+              "title": "WatchCon",
+              "list": {
+                "list1": "Download",
+                "list2": "Pricing",
+                "list3": "Characteristics",
+                "list4": "Use case",
+                "list5": "Company introduction"
+              }
+            },
+            "data2": {
+              "title": "Resources",
+              "list": {
+                "list1": "News & Insights",
+                "list2": "Archive"
+              }
+            },
+            "data3": {
+              "title": "Support",
+              "list": {
+                "list1": "Contact Us",
+                "list2": "Support Center",
+                "list3": "FAQ"
+              }
+            }
+        },
+        "company": "Jpeople Corp. 제이피플(주)",
+        "util_1": "Privacy Policy",
+        "util_2": "a legal notice",
+        "util_3": "Terms and Conditions "
+    },
+
+    "sideMenu": {
+      "h2": "My page",
+      "p": "There are",
+      "p_end": "days left until license renewal",
+      "myInfo": "My information",
+      "licenseInfo": "License information",
+      "addressBook": "Address Book",
+      "logout": "Log out",
+      "language": "EN"
+    },
+
+    "mainPage": {
+        "intro": {
+            "p": "WatchCon is remote control software that allows users to remotely control computers located elsewhere.",
+            "strong": "It is very useful in various fields such as IT support, remote work, and remote education, as it enables tasks to be performed seamlessly and conveniently from anywhere by accessing and connecting to computers.",
+            "download": "Free Download",
+            "license": "Purchase License"
+        },
+        "character": {
+            "h3": "Key Features",
+            "strong": {
+              "strong_black": "is software that allows users to control computers remotely, even when they are physically far away.",
+              "strong_point": "Remote computer control software",
+              "strong_end": ""
+            }, 
+            "p": "You can access your computer anytime, anywhere, and collaborate with colleagues to handle necessary tasks. It is highly useful in various fields such as IT support, remote work, and remote education.",
+            "data": {
+              "slide1": {
+                "title": "Remote Access",
+                "desc": "Users can access their computers or servers from other locations to perform tasks. Problems can be resolved remotely, saving time and costs."
+              },
+              "slide2": {
+                "title": "Strong Security",
+                "desc": "Advanced encryption technology protects data communication, ensuring the safety of users' information."
+              },
+              "slide3": {
+                "title": "Multi-Platform Support",
+                "desc": "Compatible with various operating systems, including Windows, Mac, Linux, and mobile devices."
+              },
+              "slide4": {
+                "title": "Problem Solving Through Screen Sharing",
+                "desc": "Remote users can view other users' screens, making it useful for troubleshooting or educational sessions. Team members can collaborate in real time by sharing their screens."
+              },
+              "slide5": {
+                "title": "File Transfer",
+                "desc": "Provides a feature to easily transfer files between remote computers."
+              },
+              "slide6": {
+                "title": "User Convenience Features",
+                "desc": "Provides user-friendly features such as multilingual support, chatting, audio recording, screen recording, and quality monitoring."
+              }
+            }
+        },
+        "example": {
+            "h2": "Use Cases",
+            "strong": " is used in various industries",
+            "data": {
+                "data1": "unmanned machinery",
+                "data2": "IT solutions",
+                "data3": "educational institution",
+                "data4": "product sales",
+                "data5": "manufacture",
+                "data6": "medical",
+                "data7": "Automobile",
+                "data8": "Overseas Subsidiary"
+            }
+        },
+        "pricing": {
+            "h2": "WatchCon License Pricing",
+            "p": "WatchCon offers reasonable prices.",
+            "monthly": "Monthly",
+            "yearly": "Yearly",
+            "data": {
+                "data1": {
+                  "name": "WatchCon Free",
+                  "price": "$0",
+                  "priceType": "",
+                  "text": "The free version has the same features as the paid version for 30 days. You can use it.",
+
+                  "list": {
+                    "list1": "Strong security possible",
+                    "list2": "Multilingual language support",
+                    "list3": "Session connection via password",
+                    "list4": "Provides quality monitoring",
+                    "list5": "Connect 1 device"
+                  }
+                },
+                "data2": {
+                  "name": "WatchCon Lite",
+                  "price": "$10",
+                  "priceType": "Monthly",
+                  "text": "Licensed paid version You can use all features without restrictions.",
+
+                  "list": {
+                    "list1": "Strong security possible",
+                    "list2": "Multilingual language support",
+                    "list3": "Session connection via password",
+                    "list4": "Provides quality monitoring",
+                    "list5": "Connect 1 device",
+                    "list6": "Number of simultaneous remote device connections: 3",
+                    "list7": "Simultaneous remote acceptance: 3",
+                    "list8": "Mobile device support",
+                    "list9": "Unlimited device connections",
+                    "list10": "Large file transfer",
+                    "list11": "Chat, voice, and recording support"
+                  }
+                },
+                "data3": {
+                  "name": "WatchCon Premium",
+                  "price": "$30",
+                  "priceType": "Monthly",
+                  "text": "Licensed paid version You can use all features without restrictions.",
+
+                  "list": {
+                    "list1": "Strong security possible",
+                    "list2": "Multilingual language support",
+                    "list3": "Session connection via password",
+                    "list4": "Provides quality monitoring",
+                    "list5": "Connect 1 device",
+                    "list6": "Number of simultaneous remote device connections: 50",
+                    "list7": "Simultaneous remote acceptance: 10",
+                    "list8": "Mobile device support",
+                    "list9": "Unlimited device connections",
+                    "list10": "Large file transfer",
+                    "list11": "Chat, voice, and recording support"
+                  }
+                },
+                "data4": {
+                  "name": "WatchCon Business",
+                  "price": "$50",
+                  "priceType": "Monthly",
+                  "text": "Licensed paid version You can use all features without restrictions.",
+
+                  "list": {
+                    "list1": "Strong security possible",
+                    "list2": "Multilingual language support",
+                    "list3": "Session connection via password",
+                    "list4": "Provides quality monitoring",
+                    "list5": "Connect 1 device",
+                    "list6": "Number of simultaneous remote device connections: unlimit",
+                    "list7": "Simultaneous remote acceptance: 50",
+                    "list8": "Mobile device support",
+                    "list9": "Unlimited device connections",
+                    "list10": "Large file transfer",
+                    "list11": "Chat, voice, and recording support"
+                  }
+                }
+            }
+        },
+        "faq": {
+            "여기일단 보류좀 하겠습니다.": "보류보류"
+        }
+    },
+
+    "productPage": {
+      "h2": "Product introduction",
+      "p": " is a description of the product introduction",
+      "img": "img/introduction/item_img_en.png",
+      "item": {
+        "item1": {
+          "strong": "Easy remote access",
+          "p": "간편한 원격 접속에 관한 내용"
+        },
+        "item2": {
+          "strong": "In individual display window Show remote PC",
+          "p": "간편한 원격 접속에 관한 내용"
+        },
+        "item3": {
+          "strong": "Large file transfer",
+          "p": "간편한 원격 접속에 관한 내용"
+        },
+        "item4": {
+          "strong": "Multilingual support",
+          "p": "간편한 원격 접속에 관한 내용"
+        },
+        "item5": {
+          "strong": "Device group management",
+          "p": "간편한 원격 접속에 관한 내용"
+        },
+        "item6": {
+          "strong": "Privacy protection mode",
+          "p": "간편한 원격 접속에 관한 내용"
+        },
+        "item7": {
+          "strong": "Enable remote restart",
+          "p": "간편한 원격 접속에 관한 내용"
+        },
+        "item8": {
+          "strong": "Message Chat",
+          "p": "간편한 원격 접속에 관한 내용"
+        },
+        "item9": {
+          "strong": "Multi-monitor display",
+          "p": "간편한 원격 접속에 관한 내용"
+        },
+        "item10": {
+          "strong": "Strong secure connection",
+          "p": "간편한 원격 접속에 관한 내용"
+        },
+        "item11": {
+          "strong": "Audio/Video Recording",
+          "p": "간편한 원격 접속에 관한 내용"
+        }
+      },
+      "platform_p": "Fully supported and provides the best performance on all major operating systems. Try it quickly and easily on the platform of your choice!"
+    },
+
+    "myPage": {
+      "info": {
+        "h2": "Hello,",
+        "h2_end": "!",
+        "name": "Name",
+        "email": "Email address",
+        "id": "ID",
+        "button": "Change password"
+      },
+      "license": {
+        "licenseInfo": {
+          "h2": "License information",
+          "Lssue": "Lssue date",
+          "Renewal": "Renewal cycle",
+          "License": "License type",
+          "LicenseKey": "License key",
+          "Expire": "Expiration date",
+          "AutoRenewal": "Automatic renewal",     
+          "Renew": "Renewal",
+          "cancel": "Minimum",
+          "buy_cancel": "Cancel"
+        },
+        "licenseHistory": {
+          "h2": "License purchase history",
+          "table": {
+            "Cycle": "renewal cycle",
+            "License": "License type",
+            "Date": "registration date",
+            "LicenseKey": "License key",
+            "Expire": "Expiration date"
+          }
+        }
+      },
+      "address": {
+        "group": "Group name",
+        "status": "Situation",
+        "name": "Name",
+        "edit": "Edit",
+        "new": "Register new information",
+        "writeText": "Create new information",
+        "editText": "Edit information",
+        "cancel": "Cancel",
+        "save": "Save"
+      }
+    },
+
+    "licensePage": {
+      "monthly": "Monthly",
+      "price": "Free",
+      "freeText": "This is a personal license that can be used by an individual on one PC.",
+      "liteText": "This license can be used by individuals or small teams to access a small number of remote locations.",
+      "premiumText": "This license can be used by small teams when connecting to multiple remote locations.",
+      "businessText": "This is a license that can be used on a large scale with multiple connections."
+    },
+
+    "buyPage": {
+      "name": "Name (Alphanumeric characters are allowed)",
+      "email": "Email",
+      "licenseType": "License type",
+      "error_name": "Please enter a correct name",
+      "error_email": "Please enter a correct email address",
+      "error_email_format": "Please enter a correct email address",
+      "error_duplicate": "User already exists."
+    },
+
+    "login": {
+      "login": "Login",
+      "wrong_id_or_password": "Please check your ID or password.",
+      "id": "ID",
+      "password": "Password",
+      "forgot": "ID / Password Find",
+      "save": "ID Save",
+      "lost_id": "ID Find",
+      "lost_password": "Password Find",
+      "continue": "Check",
+      "email_placeholder": "Enter your email",
+      "your_email": "Your ID is",
+      "email_send_end": ".",
+      "not_found": "No user found with the information you entered.",
+      "error_email": "Please enter a correct email address"
+    }
+}
